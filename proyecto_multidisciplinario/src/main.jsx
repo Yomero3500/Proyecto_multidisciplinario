@@ -4,11 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {  createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Layout from './pages/Layout';
 import LayoutInicial from './pages/LayoutInicial'
-
+import './App.css'
 import Panel from './pages/Panel'
-
-
-
+import User from './pages/User'
+import AgregarUsuario from './pages/AgregarUsuario'
+import Empleados from './pages/Empleados'
+import Cocina from './pages/Cocina'
+import Ordenes from './pages/Ordenes'
+import Login from './pages/Login'
 
 const router = createBrowserRouter([
 {
@@ -17,13 +20,38 @@ const router = createBrowserRouter([
   children: [
     {
       index: true,
-      element:<Panel/>
+      path:'usuario',
+      element:<User/>
     },
     {
-      path:"PanelDeControl",
+      path:"panel",
       element:<Panel/>
 
+    },
+    {
+      path:"agregarusuarios",
+      element:<AgregarUsuario/>
+
+    },
+    {
+      path:"empleados",
+      element:<Empleados/>
+
+    },
+    {
+      path:"cocina",
+      element:<Cocina/>
+
+    },
+    {
+      path:"ordenes",
+      element:<Ordenes/>
+
     }
+  
+  
+  
+  
   
 
   ]
@@ -33,7 +61,7 @@ const router = createBrowserRouter([
   element:<LayoutInicial/>,
   children:[{
   index: true,
-  element:<Panel/>
+  element:<Login/>
 
   }]
   

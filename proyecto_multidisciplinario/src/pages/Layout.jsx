@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
+import SideMenu from "../components/SideMenu";
 
 
 function Layout() {
@@ -7,8 +8,10 @@ function Layout() {
   /* {!isMenuRoute&&<NavBar />} esta parte va en el return*/
   return (
     <>
-     
-       <Outlet />
+       <SideMenu>
+               <Outlet />
+       </SideMenu>
+
   
 
     </>
