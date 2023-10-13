@@ -11,6 +11,7 @@ import Empleados from './pages/Empleados'
 import Cocina from './pages/Cocina'
 import Ordenes from './pages/Ordenes'
 import Login from './pages/Login'
+import MenuDital from './pages/MenuDital';
 
 const router = createBrowserRouter([
 {
@@ -46,7 +47,13 @@ const router = createBrowserRouter([
       path:"ordenes",
       element:<Ordenes/>
 
+    },
+    {
+      path:"menudigital",
+      element:<MenuDital/>
+
     }
+  
   
   
   

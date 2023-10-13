@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaTrello, FaUserPlus, FaUsers, FaBars, FaUser } from "react-icons/fa";
 import { FaKitchenSet } from "react-icons/fa6";
-import { MdBorderColor } from "react-icons/md";
+import { MdBorderColor,MdOutlineMenuBook } from "react-icons/md";
 import { ImExit } from "react-icons/im";
 import { NavLink } from "react-router-dom";
 import '../App.css'
@@ -38,6 +38,10 @@ const SideMenu = ({ children }) => {
       path: "/inicio/ordenes",
       name: "Ordenes",
       icon: <MdBorderColor />,
+    },{
+      path:"/inicio/menudigital",
+      name:"Menu digital",
+      icon:<MdOutlineMenuBook />      
     },
     {
       path: "/",
