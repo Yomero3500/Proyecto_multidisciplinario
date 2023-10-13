@@ -4,7 +4,7 @@ import { FaKitchenSet } from "react-icons/fa6";
 import { MdBorderColor } from "react-icons/md";
 import { ImExit } from "react-icons/im";
 import { NavLink } from "react-router-dom";
-
+import '../App.css'
 const SideMenu = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);

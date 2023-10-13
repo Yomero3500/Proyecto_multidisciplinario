@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {  createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Layout from './pages/Layout';
 import LayoutInicial from './pages/LayoutInicial'
-import './App.css'
 import Panel from './pages/Panel'
 import User from './pages/User'
 import AgregarUsuario from './pages/AgregarUsuario'
