@@ -9,7 +9,7 @@ function Login() {
         <div className='Formulario'>
           <div>
           <div class="container2">
-        <h className="H2P">Bienvenido</h>
+        <h2 className="h2P">Bienvenido</h2>
         <form>
             <input type="text" placeholder="Usuario"  />
             <input type="password" placeholder="Contraseña"  />
