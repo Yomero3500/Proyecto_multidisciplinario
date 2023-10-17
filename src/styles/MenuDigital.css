@@ -22,3 +22,11 @@
     background-color: #0056b3;
   }
   
+  .comanda_pedido{
+    display: flex;
+    justify-content: end;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(255, 167, 167);
+
+  }
